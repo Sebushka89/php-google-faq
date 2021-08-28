@@ -75,7 +75,7 @@
 <header>
 
 <div class="head_top">
-        <img class="logo" src="" alt="">
+        <img class="logo" src="./img/Google-logo.png" alt="">
         <p>Privacy e Termini</p>
 </div>
 
@@ -113,11 +113,10 @@
         <li><a href="#">Termini</a></li>
     </ul>
     <div>
-        <img style="vertical-align: middle" src="img\img_1.png" alt="">
         <select name="" id="">
-        <option value="It">Italiano</option>
-        <option value="EN">Inglese</option>
-        <option value="ES">Spagnolo</option>
+            <option value="It">Italiano</option>
+            <option value="EN">Inglese</option>
+            <option value="ES">Spagnolo</option>
         </select>
     </div>
 </div>
@@ -137,16 +136,20 @@ header {
     left: 0;
     z-index: 999;
     width: 100%;
-    height:60px;
+    height:75px;
     border-bottom: 1px solid lightgrey;
     background-color: white;
+}
+.logo{
+  height: 50px;
+  vertical-align: middle;
 }
 
 .head_top p {
     display: inline;
-    font-size: 20px;
-    vertical-align: middle;
+    font-size: 18px;
     color: #5f6368;
+    vertical-align: middle;
 }
 
 .nav {
@@ -171,7 +174,7 @@ header {
 /* MAIN */
 main {
     width: 60%;
-    margin: 100px auto 0;
+    margin: 150px auto ;
 }
 
 .faq {
@@ -198,6 +201,10 @@ main p:last-child{
 main a {
     text-decoration: none;
     color: blue;
+}
+main ol li{
+    margin-left: 14px;
+    padding: 12px 0 0 16px;
 }
 main ul li{
     margin-left: 14px;
@@ -239,12 +246,16 @@ a:hover, a:active {
     background-color: white;
     display: none;
     overflow: hidden;
+    border: 1px solid lightgrey; 
 }
 
 /* FOOTER */
 footer {
     width: 100%;
     background-color: #f5f5f5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .container_footer {
@@ -254,6 +265,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 footer .nav li a {
